@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getPets } from '../../api/petfinder';
 import Hero from '../../components/hero';
-import Pet from '../../components/pet';
+// import Pet from '../../components/pet';
 import {useParams, Link} from 'react-router-dom';
 
 const HomePage = () => {
@@ -25,6 +25,7 @@ const HomePage = () => {
 
   return (
     <div className="page">
+       
       <Hero />
       <h3>
         <span className="pet-type-label">{type ? `${type}s` : 'Pets'}</span>{' '}
