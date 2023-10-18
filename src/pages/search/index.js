@@ -37,6 +37,7 @@ const SearchPage = () => {
       <main>
         <div className="grid">
           {pets.map((pet) => (
+            
             <Pet animal={pet} key={pet.id} />
           ))}
         </div>
